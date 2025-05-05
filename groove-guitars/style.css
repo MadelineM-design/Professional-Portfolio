@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.logo{
+  max-width: 275px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+#home-hero{
+  background-image: url(images/guitars.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#home-hero h1{
+  text-alight: center;
+  color: #FF00FE;
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+  padding: 10x;
+  background-color: rgba(0,0,0,.5);
+}
+table{
+      border-collapse: collapse;
+      margin: 0 auto;
+      border: 5px solid #000000;
+      
+}
+label{
+  float: left;
+  width: 8em;
+  padding-right: 1em;
+}
+input{
+  margin-bottom: 1em;
+  display: block;
+}
+textarea{
+  margin-bottom: 1em;
+  display: block;
+}
+submit{
+  display: block;
+  background-color: lightgray;
+}
+[type=submit]
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+th{
+  background-color: #93278E;
+  color: white;
+  padding: 10px;
+  border-bottom: 5px solid #000000;
+  
+}
+td{
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+body{
+  font-family: "Montserrat", serif;
+  margin: 0;
+  font-size: 1em;
+}
+
+.float-right{
+  float: right;
+  max-width: 40%;
+  height: auto;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+/* Website Links except the nav */
+a:link{
+  color: #6f2da8;
+}
+a:visited{
+  color: #6f2da8;
+}
+a:hover{
+  color: royalblue;
+}
+a:active{
+  color: indigo;
+}
+header{
+  text-align: center;
+  background-color: black;
+}
+
+/*Navigation*/
+nav{
+  background: rgb(255,102,252);
+  background: linear-gradient(90deg, rgba(255,102,252,1) 0%, rgba(115,0,112,1) 40%, rgba(35,76,178,1) 68%, rgba(65,75,250,1) 100%);
+  border-top: 3px solid purple;
+  border-bottom: 3px solid purple;
+  padding: 5px;
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 8px 0;
+  padding: 0;
+}
+nav li{
+  display: inline;
+  padding: 5px;
+}
+nav a{
+  text-decoration:none;
+}
+nav a:link{
+  color: #fff4ff;
+}
+nav a:visited{
+  color: #e8d1e8;
+}
+nav a:hover{
+  color: #d7d7ff;
+  text-decoration: underline;
+}
+nav a:active{
+  color: #f5cff5;
+}
+
+/*Main */
+main{
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/*Footer */
+footer{
+  border-top: purple 3px solid;
+  text-align: center;
+  color: white;
+  background: rgb(255,102,252);
+  background: linear-gradient(90deg, rgba(255,102,252,1) 0%, rgba(115,0,112,1) 40%, rgba(35,76,178,1) 68%, rgba(65,75,250,1) 100%);
+}
+footer a{
+  text-decoration:none;
+}
+footer a:link{
+  color: #fff4ff;
+}
+footer a:visited{
+  color: #e8d1e8;
+}
+footer a:hover{
+  color: #d7d7ff;
+}
+footer a:active{
+  color:#f5cff5;
+}
+
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+  font-size: 4em;
+  text-align: center;
+  color: #93268f;
+  font-family:cursive
+}
+h2{
+  background-color: #ee82ee;
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 10px;
+  border: #800080 3px solid;
+  font-family: cursive;
+  clear: both;
+}
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+  h1{
+    font-size: 1.8em;
+  }
+}
+
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 1.5em;
+  }
+}
+/* from https://flaviocopes.com/responsive-youtube-videos/ */
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

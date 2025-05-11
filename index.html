@@ -25,19 +25,22 @@
 	</header>
 	<nav>
 		<ul>
-    		<li><a href="index.html">Home</a></li>
-    		<li><a href="resume.html">Resume</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="projects.html">Projects</a></li>
+    		<li><a href="index.html" class="button-55">Home</a></li>
+    		<li><a href="resume.html" class="button-55">Resume</a></li>
+        <li><a href="portfolio.html" class="button-55">Portfolio</a></li>
+        <li><a href="projects.html" class="button-55">Projects</a></li>
   		</ul>
 	</nav>
 	<div class="home-hero">
     <h1>Home</h1>
 	</div>
 	<main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 js-game">
 		<h1>JavaScript Flappy Bird Game</h1>
 		<p>I made this as a test while learning javascript. Using the <a herf="https://www.w3schools.com/js/DEFAULT.asp">W3 Schools JavaScript tutorial</a> website I was able to understand the code easily. I designed it look better by adding CSS, background image, and different colors to the game.</p>
-		<h2>Using the FLAP button to saty in the air. How long can you fly?</h2>
+		<h2>Using the FLAP button to stay in the air. How long can you fly?</h2>
 		<div id="game" ></div>
    <div class="game-controls">
       <button class="myButton" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLAP</button>
@@ -162,11 +165,16 @@
           myGamePiece.gravity = n;
       }
    </script>
-		<h1>About Me</h1>
-
-		<img src="images/headshot.png" height="245" width="331" alt="headshot of me" class="float-right">
-
-		<p>My name is Madeline Mathison but I perfer to go by Maddy. I'm currently studying at Saint Paul College to get a computer graphhics and visuilization degree, I plan to graduate in 2026 or 2027. I'm making this portfolio to show what skills I have, my resume and what I am learning. I will continue to update this as I go along with my school year.</p>
+ </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+        <h1>About Me</h1>
+        </div>
+      </div>
+<div class="row">
+  <div class="col-sm-8">
+		<p>My name is Madeline Mathison but I perfer to go by Maddy. I'm currently studying at Saint Paul College to get a computer graphics and visuilization degree, I plan to graduate in 2026 or 2027. I'm making this portfolio to show what skills I have, my resume and what I am learning. I will continue to update this as I go along with my school year.</p>
 		<p>So far I have taken the following classes:</p>
 		<ul>
 			<li>
@@ -184,6 +192,13 @@
 		<p>I'm currently studying html aka website design and video editing. Next semester I will be taking classes about animation fundementals, digital sound design and more.</p>
 
 		<p>My hobbies include digital art, gaming, drums, and learning about jellyfish.</p>
+  </div>
+  <div class="col-sm-4">
+
+    <img src="images/headshot.png" alt="headshot of me" class="img-fluid rounded float-start">
+  </div>
+</div>
+</div>
 	</main>
 	<footer>
     <div class="container-fluid">
@@ -206,7 +221,7 @@
         </div>
         <div class="col-sm-2">
           <i class="fa fa-twitter" aria-hidden="true"></i>
-          <a href="https://x.com/">Check out my Twitter</a>
+          <a href="https://x.com/mjmathison05/">Check out my Twitter</a>
         </div>      
       </div>
       <div class="row">
